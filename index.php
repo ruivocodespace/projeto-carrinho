@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Meu carrinho</h1>
+        <?php
+        include 'modulos/carrinho.php';
+        include 'modulos/frete.php';
+        ?>
+    </div>
+</body>
+
+</html>

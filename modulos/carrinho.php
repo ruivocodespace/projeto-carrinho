@@ -5,20 +5,24 @@
         <?php
         // --- SUA MISSÃO COMEÇA AQUI --- //
 
-        // 1. Crie uma variável $subtotal começando em 0;
-
-        // 2. Crie um Array (lista) chamado $produtos no carrinho. 
-        // Ex: ['Furadeira' => 250.00, 'Martelo' => 50.00]
-
+        $subtotal = 0;
+        // Array (lista) chamado $produtos no carrinho. 
+        $p_carrinho = [
+            "Geladeira" => 800 ,
+            "Xbox One" => 5000,
+            "1kg de Feijão" => 10
+        ];
         // 3. Faça um PARA CADA (foreach) para percorrer o array de $produtos.
 
-        // 4. Dentro do loop: 
-        //    - Imprima o nome e o preço de cada produto em uma tag <li>
-        //    - Some o preço do produto na variável $subtotal.
+        foreach ($p_carrinho as $ferramentas => $preco) {
+            echo "<li>" . $ferramentas ." R$: " . $preco. "</li>";
+  
+            $subtotal = $subtotal + $preco;
+        }
 
         ?>
     </ul>
 
     <hr>
-    <h3>Subtotal: R$ <?php /* echo $subtotal; */ ?></h3>
+    <h3>Subtotal: R$ <?php echo $subtotal; ?></h3>
 </div>
